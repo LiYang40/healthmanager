@@ -1,3 +1,32 @@
 <resources>
+<<<<<<< HEAD
     <string name="app_name">HealthManager</string>
+=======
+    <string name="app_name">Health Manager</string>
+    <string name="mon">Mon</string>
+    <string name="tue">Tue</string>
+    <string name="wed">Wed</string>
+    <string name="thu">Thu</string>
+    <string name="sat">Sat</string>
+    <string name="fri">Fri</string>
+    <string name="sun">Sun</string>
+    <string name="daily">Daily</string>
+    <string name="weekly">Weekly</string>
+    <string name="set_reminder">Set Reminder</string>
+    <string name="no_reminders_set">No reminders set</string>
+    <string name="category">Category</string>
+    <string name="food">Food</string>
+    <string name="water">Water</string>
+    <string name="activity">Activity</string>
+    <string name="sleep">Sleep</string>
+    <string name="bmi">BMI</string>
+    <string name="review_previous_data">Review Previouss Data\n</string>
+
+    <string-array name="reminder_categories">
+        <item>Food</item>
+        <item>Activity</item>
+        <item>Sleep</item>
+        <item>Water</item>
+    </string-array>
+>>>>>>> 98b3c21 (Update project with latest changes)
 </resources>

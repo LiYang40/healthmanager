@@ -3,6 +3,7 @@ package com.example.healthmanager.model;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
+<<<<<<< HEAD
 @Entity
 public class Reminder {
 
@@ -37,3 +38,20 @@ public class Reminder {
                 && time.equals(other.time) && repeat.equals(other.repeat);
     }
 }
+=======
+@Entity(tableName = "reminders")
+public class Reminder {
+    @PrimaryKey(autoGenerate = true)
+    public int id;
+
+    public String category; // e.g., "Daily Log Reminder"
+    public String time; // Format: HH:mm
+    public boolean isActive;
+
+    public Reminder(String category, String time, boolean isActive) {
+        this.category = category;
+        this.time = time;
+        this.isActive = isActive;
+    }
+}
+>>>>>>> 98b3c21 (Update project with latest changes)

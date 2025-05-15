@@ -1,13 +1,24 @@
 {
   "project_info": {
+<<<<<<< HEAD
     "project_number": "1090557551152",
     "project_id": "healthmanager-de6e8",
     "storage_bucket": "healthmanager-de6e8.firebasestorage.app"
+=======
+    "project_number": "592905836591",
+    "firebase_url": "https://healthmanager-e7bb6-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "healthmanager-e7bb6",
+    "storage_bucket": "healthmanager-e7bb6.firebasestorage.app"
+>>>>>>> 98b3c21 (Update project with latest changes)
   },
   "client": [
     {
       "client_info": {
+<<<<<<< HEAD
         "mobilesdk_app_id": "1:1090557551152:android:193db35ed9eb7b5aaac3f5",
+=======
+        "mobilesdk_app_id": "1:592905836591:android:df79beb50fe399ca3b8eda",
+>>>>>>> 98b3c21 (Update project with latest changes)
         "android_client_info": {
           "package_name": "com.example.healthmanager"
         }
@@ -15,7 +26,11 @@
       "oauth_client": [],
       "api_key": [
         {
+<<<<<<< HEAD
           "current_key": "AIzaSyCmtEg25DlFKMOaXIx7JXAXmh2jv3ZUgCM"
+=======
+          "current_key": "AIzaSyCBqs4lzWa0Uaqq8IWoNj9NZgXa6LHilnc"
+>>>>>>> 98b3c21 (Update project with latest changes)
         }
       ],
       "services": {

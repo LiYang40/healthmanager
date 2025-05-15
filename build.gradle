@@ -1,10 +1,18 @@
 buildscript {
     repositories {
+<<<<<<< HEAD
         google()
         mavenCentral()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:8.2.2'
+=======
+        google() // Required for Android tools
+        mavenCentral() // Required for other dependencies
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.1.1'
+>>>>>>> 98b3c21 (Update project with latest changes)
         classpath 'com.google.gms:google-services:4.4.2'
     }
 }
@@ -13,7 +21,17 @@ allprojects {
     repositories {
         google()
         mavenCentral()
+<<<<<<< HEAD
         maven { url 'https://jitpack.io' } // Required for MPAndroidChart
     }
 }
 
+=======
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+>>>>>>> 98b3c21 (Update project with latest changes)

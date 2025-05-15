@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
@@ -18,3 +19,15 @@
         android:title="Rewards" />
 
 </menu>
+=======
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/chartsFragment"
+        android:icon="@drawable/ic_chart"
+        android:title="Charts" />
+    <item
+        android:id="@+id/remindersFragment"
+        android:icon="@drawable/ic_reminder"
+        android:title="Reminders" />
+</menu>
+>>>>>>> 98b3c21 (Update project with latest changes)

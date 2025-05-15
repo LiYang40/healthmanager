@@ -1,5 +1,6 @@
 package com.example.healthmanager.repository;
 
+<<<<<<< HEAD
 import android.content.Context;  // Import Context
 import android.app.Application;
 
@@ -97,3 +98,55 @@ public class HealthRepository {
         };
     }
 }
+=======
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.MutableLiveData;
+
+import com.example.healthmanager.model.HealthRecord;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class HealthRepository {
+
+    private final DatabaseReference databaseReference;
+    private final MutableLiveData<List<HealthRecord>> healthRecordsLiveData = new MutableLiveData<>();
+
+    public HealthRepository() {
+        databaseReference = FirebaseDatabase.getInstance().getReference("health_records");
+    }
+
+    // Add this method to fix the issue
+    public void addHealthRecord(HealthRecord healthRecord) {
+        String recordId = databaseReference.push().getKey(); // Generate a unique key
+        if (recordId != null) {
+            databaseReference.child(recordId).setValue(healthRecord);
+        }
+    }
+
+    public LiveData<List<HealthRecord>> getHealthRecords() {
+        databaseReference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                List<HealthRecord> records = new ArrayList<>();
+                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                    HealthRecord record = snapshot.getValue(HealthRecord.class);
+                    records.add(record);
+                }
+                healthRecordsLiveData.setValue(records);
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+                // Handle errors here
+            }
+        });
+        return healthRecordsLiveData;
+    }
+}
+>>>>>>> 98b3c21 (Update project with latest changes)

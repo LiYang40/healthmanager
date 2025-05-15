@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Weight Input -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weight (kg)"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+
+        <EditText
+            android:id="@+id/weight_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter weight"
+            android:inputType="numberDecimal" />
+
+        <!-- Height Input -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Height (m)"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/height_input"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Enter height"
+            android:inputType="numberDecimal" />
+
+        <!-- Date Picker -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/date_picker_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Date" />
+
+        <TextView
+            android:id="@+id/selected_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today"
+            android:layout_marginTop="8dp" />
+
+        <!-- BMI Output -->
+        <TextView
+            android:id="@+id/bmi_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BMI: --"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/bmi_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BMI Category: --"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>

@@ -1,5 +1,6 @@
 pluginManagement {
     repositories {
+<<<<<<< HEAD
         google()
         mavenCentral()
         gradlePluginPortal()
@@ -18,3 +19,18 @@ dependencyResolutionManagement {
 
 rootProject.name = "HealthManager"
 include ':app'
+=======
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "healthmanager4" // Replace with your project name
+include ':app'
+>>>>>>> 98b3c21 (Update project with latest changes)

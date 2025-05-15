@@ -1,6 +1,12 @@
 plugins {
     id 'com.android.application'
+<<<<<<< HEAD
     id 'com.google.gms.google-services' // Firebase plugin
+=======
+
+    // Google Services plugin for Firebase
+    id 'com.google.gms.google-services'
+>>>>>>> 98b3c21 (Update project with latest changes)
 }
 
 android {
@@ -9,11 +15,16 @@ android {
 
     defaultConfig {
         applicationId "com.example.healthmanager"
+<<<<<<< HEAD
         minSdk 26
+=======
+        minSdk 24 // Updated to API 24 (Nougat)
+>>>>>>> 98b3c21 (Update project with latest changes)
         targetSdk 34
         versionCode 1
         versionName "1.0"
 
+<<<<<<< HEAD
 
         javaCompileOptions {
             annotationProcessorOptions {
@@ -25,10 +36,21 @@ android {
     buildFeatures {
         viewBinding true
         dataBinding true
+=======
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+>>>>>>> 98b3c21 (Update project with latest changes)
     }
 }
 
 dependencies {
+<<<<<<< HEAD
     // AndroidX and Material
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.9.0'
@@ -49,3 +71,30 @@ dependencies {
     // MPAndroidChart
     implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
 }
+=======
+    def room_version = "2.5.0"
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version" // For Java
+
+    // Firebase dependencies (using BoM for compatibility)
+    implementation platform('com.google.firebase:firebase-bom:33.13.0')
+    implementation 'com.google.firebase:firebase-database'
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-messaging'
+
+    // MPAndroidChart for charting
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+
+    // AndroidX and Material dependencies
+    implementation 'androidx.core:core-ktx:1.10.1'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+
+    // AndroidX Lifecycle and Room (for MVVM and database)
+    implementation 'androidx.lifecycle:lifecycle-viewmodel:2.6.1'
+
+    // Android Navigation Component
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.7.2'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.7.2'
+}
+>>>>>>> 98b3c21 (Update project with latest changes)

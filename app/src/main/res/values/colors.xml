@@ -2,8 +2,13 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+<<<<<<< HEAD
     <color name="teal_700">#00796B</color>
     <color name="teal_200">#80CBC4</color>
 
 
+=======
+    <color name="chart_line_color">#03DAC5</color>
+    <color name="chart_circle_color">#36F482</color>
+>>>>>>> 98b3c21 (Update project with latest changes)
 </resources>
