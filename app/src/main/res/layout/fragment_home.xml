@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- RecyclerView for Health Records -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/healthRecordsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="16dp" />
+
+    <!-- TextView for displaying personalized advice -->
+    <TextView
+        android:id="@+id/adviceTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your health advice will appear here."
+        android:textSize="16sp"
+        android:padding="16dp" />
+</LinearLayout>
